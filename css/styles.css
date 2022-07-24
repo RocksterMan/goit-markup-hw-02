@@ -1,7 +1,220 @@
+/* Root styles */
+:root {
+    --bgc-global:#F5F5F5;  
+    --bgc-main-tittle: #2F303A;
+    --bgc-header:#FFFFFF;
+    --bgc-team: #F5F4FA;
+    --bgc-footer: #2F303A;
+    --fst-text-color: #212121;
+    --snd-text-color: #757575;
+    --special-color: #2196F3;
+}
+
+header {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    color: var(--fst-text-color);
+}
+
 /* Body styles */
 body {
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background-color: var(--bgc-global);
+    color: var(--fst-text-color);  
 }
 
-/* Main styles */
+.logo {
+    text-decoration: none;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: #000000;
+}
+.logo-web {
+    color: var(--special-color);
+}
+.header {
+    background-color: var(--bgc-header);
+}
+.header-nav {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.contact {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.19;
+    letter-spacing: 0.02em;
+    color: var(--snd-text-color);
+    text-decoration: none;
+}
+.contact:hover,
+.site-nav:hover {
+    color: var(--special-color);
+}
+
+.list {
+    list-style: none;
+}
+
+.button {
+    cursor: pointer;
+    
+}
+
+.site-nav {
+    color: var(--fst-text-color);
+    text-decoration: none;
+}   
+
+.current {
+    color: var(--special-color);
+}
+
+/* Main page*/
+.main-tittle {
+    background-color: var(--bgc-main-tittle);
+}
+.main-advantage,
+.what-do-we-do {
+    background-color: var(--bgc-global);
+}
+.main-adv-tittle {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--fst-text-color);
+}
+.main-adv-text {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--snd-text-color);
+}
+.main-slogan {
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.main-button {
+    cursor: pointer;
+    background: var(--special-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+.main-button:hover,
+.main-button:focus, {
+    color: #188CE8;
+}
+
+
+.main-wdwd-tittle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--fst-text-color)
+}
+
+.team {
+    background: var(--bgc-team);
+}
+.team-tittle {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-card {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+    width: max-content;
+}
+.team-name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+.team-job {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--snd-text-color);
+}
+
+/* Portfolio page*/
+
+.portfolio-tittle {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+/* Footer*/
+
+footer {
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    background-color: var(--bgc-footer);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.footer-address,
+.footer-contact {
+    font-style: normal;
+    text-decoration: none;
+}
+
+.footer-address,
+.logo-studio {
+    color: #FFFFFF;
+}
+
+.footer-contact {
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer-contact:hover,
+.footer-contact:focus {
+    color: var(--special-color);
+}
