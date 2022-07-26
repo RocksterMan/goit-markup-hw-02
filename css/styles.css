@@ -14,8 +14,8 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
+ /*    font-style: normal;
+    font-weight: 400; */
     font-size: 14px;
     background-color: #FFFFFF;
     color: var(--fst-text-color);
@@ -44,7 +44,7 @@ body {
 }
 
 .header-nav {
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     font-style: normal;
     font-weight: 500;
 }
@@ -81,6 +81,7 @@ body {
 }
 .main-adv-tittle {
     font-weight: 700;
+    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
@@ -171,26 +172,28 @@ body {
 /* Portfolio page*/
 
 .portfolio-tittle {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
 }
 
 .prtfl-button {
-    background: var(--bgc-team);
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
+    line-height: 1.85;
     text-align: center;
     height: 38px;
     width: max-content;
     border-radius: 4px;
+    background: var(--bgc-team);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
     cursor: pointer;
 }
